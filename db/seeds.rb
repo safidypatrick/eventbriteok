@@ -9,7 +9,7 @@
 require 'faker'
 
  20.times do
-	user = User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.name, description: Faker::Lorem.paragraphs, 
+	user = User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.paragraphs, 
 		email: Faker::Internet.free_email, encrypted_password: Faker::Internet.password)
 
 end
