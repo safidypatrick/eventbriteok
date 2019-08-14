@@ -3,7 +3,7 @@ require_relative 'application'
 
 # Initialize the Rails application.
 Rails.application.initialize!
-ctionMailer::Base.smtp_settings = {
+ActionMailer::Base.smtp_settings = {
   :user_name => ENV['SENDGRID_LOGIN'],
   :password => ENV['SENDGRID_PWD'],
   :domain => 'monsite.fr',
