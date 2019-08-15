@@ -5,6 +5,7 @@ class Evenement < ApplicationRecord
 	validates :start_date ,presence: true 
 	validates :duration ,presence: true
 	validates :title ,presence: true , length: {in: 5..140}
-	validates :price ,presence: true , numericiality: {in: 1..1000}
-	validates :location ,presence: true
+	validates :price ,presence: true , numericality: {in: 1..1000}
+	validates :location ,presence: true 
+
 end
